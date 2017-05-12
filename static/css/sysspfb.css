@@ -1,0 +1,65 @@
+/*DLC 供求页面*/
+a{text-decoration: none;cursor: pointer;color: #333;}
+ul li{list-style: none;}
+.white{background: white;}
+.center{text-align: center;}
+.weight{font-weight: bold;}
+.head{width: 100%;height: 5.5rem;background: #5FA2D7;margin-top: -1rem;}
+.head .jt_img{position: relative;top: 1rem;left: 1rem;width: 20%;float: left;margin-right: 2rem;}
+.head .jt_img>img{width: 42%;height: 2rem;padding-top: 0.7rem;padding-left: 10%;}
+.head .head_tab{position: relative;top: 1.5rem;}
+.head .head_tab ul li{float: left;font-size: 1.7rem;border:0.1rem solid white;padding: 0.5rem;/*border-radius: 0.5rem;*/margin-right: -0.1rem;}
+.head .head_tab ul li a{color: #FFFFFF;}
+.head .head_tab ul li.active{background: #FFFFFF;height: 2rem;}
+.head .head_tab ul li.active a{color: #1577BB;}
+/*.head .head_close{position: relative;top: 2rem;margin-right: 1rem;float: right;color: #FFFFFF;font-size: 1.7rem;text-decoration: underline;}*/
+.sysspfb_brief{height: 10%;}
+.sysspfb_brief .brief_img{height: 18rem;}
+.sysspfb_brief .brief_img>img{width: 100%;height: 100%;}
+.sysspfb_brief .brief_info{margin: 1rem;}
+.sysspfb_brief .brief_info .info_title{font-size: 1.7rem;color: #222222;}
+.sysspfb_brief .brief_info .info_company{font-size: 1.6rem;color: #6C6C6C;margin: 0.5rem 0;}
+.info_data ul{padding: 0;font-size: 1.4rem;}
+.info_data ul li{margin: 0.5rem 0;}
+.info_data ul li .dt{color: #979696;float: left;}
+.info_data ul li .dd{color: #222222;}
+.sysspfb_intro{margin-top: 1.5rem;padding: 1rem;}
+.sysspfb_intro .intro_title{font-size: 1.4rem;color: #222222;height: 1.8rem;border-bottom: 0.1rem solid #DADADA;}
+.sysspfb_intro .intro_info{font-size: 1.4rem;color: #979797;margin-bottom: 0.5rem;}
+.sysspfb_intro .intro_data{margin: 1rem;font-size: 1.4rem;color: #463F3A;}
+.sysspfb_operate .operate_img{float: left;margin: 0.5rem 0 0.5rem 2rem;}
+.sysspfb_operate .operate_img img{width: 60%;}
+.sysspfb_operate button{margin: 0.5rem 0 0.5rem 4rem;height: 4.6rem;width: 50%;color: white;background: #FBA955;font-size: 2rem;font-weight: bold;border-radius: 1rem;border: none;}
+
+.business_head{height: 5%;}
+.business_head .business_title{color: #404040;font-size: 1.5rem;padding: 0.2rem;}
+.business_head .business_logo>img{width: 30%;}
+.business_head .business_con{color: #463F3A;margin-left: -2rem;font-size: 1.5rem;}
+.business_head .business_con ul li{margin-bottom: 0.5rem;}
+.sysspfb_intro .business_deal{margin-left: -3rem;height: auto;display: inline-block;}
+.sysspfb_intro .business_goods{height: auto;display: inline-block;}
+.sysspfb_intro .datanone{font-size: 2rem;color: red;height: 5rem;padding-top: 3rem;margin-bottom: 1rem;}
+.sysspfb_intro .business_deal .item{width: 46%;float: left;margin: 0 0.5rem;height: 20rem;overflow: hidden;}
+.sysspfb_intro .business_deal .item_goods{width: 45%;float: left;margin: 0 0.5rem 0.5rem 0.5rem;height: 20rem;overflow: hidden;border: 1px solid #C8C8C8;}
+.sysspfb_intro .business_deal .item_goods .deal_goods{margin-top: 0.5rem;}
+.sysspfb_intro .business_deal .item_goods .deal_goods .price{color: red;margin: 0.5rem 0;font-size: 1.3rem;}
+.sysspfb_intro .business_deal .item_goods .deal_goods .deal_detail{color: #ADADAD;font-size: 1.4rem;background: #F9F9F9;height: 2.8rem;line-height: 2.8rem;}
+.sysspfb_intro .business_deal .deal_pic img{width: 100%;height: 12rem;}
+.sysspfb_intro .business_deal .deal_pic span{color: #656565;}
+.sysspfb_intro .business_deal .deal_desc{margin-left: -3rem;}
+.sysspfb_intro .business_deal .deal_title{color: #3B3B3B;font-size: 1.4rem;max-height: 3rem;overflow: hidden;margin-left: 3rem;height: 3rem;}
+.sysspfb_intro .business_deal .deal_titles{color: #3B3B3B;font-size: 1.4rem;max-height: 3rem;overflow: hidden;}
+.sysspfb_intro .business_deal .deal_desc ul li{margin-bottom: 0.3rem;color: #8D8D8D;font-size: 1.3rem;margin-left: -1rem;max-height: 1.3rem;overflow: hidden;}
+.sysspfb_intro .business_more{height: 1.6rem;border: 0.1rem solid #8D8D8D;padding-top: 0.4rem;font-size: 1.3rem;}
+.business_store{margin-top: 1rem;height: 3rem;line-height: 3rem;background: #F9F9F9;}
+.business_store button{width: 80%;height: 3rem;background: #43BDFD;color: white;font-size: 2rem;border-radius: 0.8rem;border: none;}
+.sysspfb_intro .business_store button img{margin-top: 0.4rem;float: left;margin-left: 7rem;margin-right: -4rem;width: 9%;}
+.sysspfb_intro .business_store .store_click{margin-top: 0.5rem;}
+
+.web_enquire{padding: 3rem 1rem 0 1rem;}
+.web_enquire .enquire_title{font-size: 2rem;padding-left: 1rem;height: 2.3rem;color: #222222;border-bottom: 0.1rem solid #DADADA;}
+.web_enquire .enquire_form{margin-top: 2rem;height: 35rem;}
+.web_enquire .enquire_form ul li{color: #6C6C6C;margin-bottom: 1rem;font-size: 1.4rem;}
+.web_enquire .enquire_form ul li .x-input{border-radius: 0.5rem;height: 2rem;border: 0.1rem solid #A9A9A9;}
+.web_enquire .enquire_form ul li textarea{margin: 1.2rem;border-radius: 0.5rem;}
+.web_enquire .business_store button{background: #FBA955;width: 90%;}

@@ -1,0 +1,54 @@
+/* 交易详情页css */
+.tender .fixedcoll a{position:fixed;width:100%;height:4rem;bottom:0;background-color: #FBA955;font-size: 2rem;text-align: center;color:white;line-height: 4rem;}
+.tender .describes{width: 92%;padding: 1.5rem;font-family: '微软雅黑';}
+.tender .describes .title{width: 100%;height: 2rem;margin-bottom: 1.5rem;}
+.tender .describes .title .name{float: left;font-size: 2rem;font-weight:bold;}
+.tender .describes .title .time{float: left;line-height: 3rem;font-size: 1.2rem;}
+.tender .describes .desc{width:100%;width: 100%;padding-left: 0.5rem;margin: 1rem 0;}
+.tender .describes .desc .desctitl{font-size: 1.8rem;font-weight: bold;}
+.tender .describes .desc .shopname{font-size: 1.4rem;color:#6b6b6b;}
+.tender .describes .content{background-color: #e3e3e3;list-style: none;padding: 1rem 0.5rem 1rem 2rem;font-size: 1.3rem;}
+.tender .describes .content li{margin:0.4rem 0;}
+.tender .describes .content li font{color: #6b6b6b;}
+.tender .tabone .content-item .item{display: none;margin-bottom: 4rem;}
+.tender .tabone{width: 100%;padding: 1.5rem 0;font-family: '微软雅黑';list-style: none;}
+.tender .tabone .title{width:100%;height:3.5rem;border-top: 1px solid #b5b5b5;border-bottom: 1px solid #b5b5b5;line-height: 3.5rem;font-size: 1.5rem;}
+.tender .tabone .title li{float:left;width:19%;text-align: center;margin: 0 3%;}
+.tender .tabone .mybtnm{width: 94%;text-align: center;background-color: #E25D25;height: 4rem;line-height: 4rem;font-size: 2rem;color: white;margin: 0 auto;border-radius: 0.3rem}
+.tender .tabone .content{font-family: '微软雅黑';margin-top: 1rem;}
+.tender .tabone .content .left{float: left;width:10%;height: 33rem;position:relative;}
+.tender .tabone .content .left .lines{height: 100%;border-left: 1px dashed #b5b5b5;float: right;width: 50%;}
+.tender .tabone .content .left .point{width: 50%;border: 1px solid;height: 1.8rem;text-align: center;left: 0.8rem;top: 12rem;float: left;position: absolute;margin: 0 auto;line-height: 1.8rem;border-radius: 0.4rem;background-color: #FBA955;font-size: 1.5rem;color:white;}
+.tender .tabone .content .right{width:90%;font-size: 1.5rem;float:left;margin-bottom: 2rem;}
+.tender .tabone .content .right .img{width:93%;height:25rem;}
+.tender .tabone .content .right .img img{width:100%;height:100%;}
+.tender .tabone .content .right .timeclass{background-color: #aaaaaa;position: relative;padding: 1rem;opacity: 0.5;font-size: 1.7rem;font-weight: bold;width: 87%;margin-top:-4rem;}
+.tender .tabone .content .right .text{padding-left: 0.5rem;font-size: 1.2rem;}
+.tender .tabone .content .right .text font{color: #6b6b6b;}
+
+/* 评论区 */
+.tender .tabone .content-item .item .tender-comment{padding: 1rem;overflow: hidden;}
+.tender .tabone .tender-comment .comment-item{height:3.5rem;border-bottom: 1px solid #dddddd;margin-bottom: 1rem;padding-bottom: 1rem;}
+.tender .tabone .tender-comment .comment-item .left{float:left;width:10%;height:100%;}
+.tender .tabone .tender-comment .comment-item .left img{height: 100%;width: 100%;}
+.tender .tabone .tender-comment .comment-item .right{float:left;width:88%}
+.tender .tabone .tender-comment .comment-item .right .titled{width:100%;float:left;font-size: 1rem;}
+.tender .tabone .tender-comment .comment-item .right .content{float:left;font-size:1rem;}
+.tender .tabone .tender-comment .comment-item .right .name{float:left;}
+.tender .tabone .tender-comment .comment-item .right .dates{float:right;}
+.tender .tabone .tender-comment .comment-tips{width:100%;height:3.5rem;margin:1rem 0;border:1px solid #dddddd;}
+.tender .tabone .tender-comment .comment-tips .leftd{width:10%;height:100%;float:left;}
+.tender .tabone .tender-comment .comment-tips .leftd img{width: 100%;height: 100%;}
+.tender .tabone .tender-comment .comment-tips .rightd{width:88%;height:100%;float:left;}
+.tender .tabone .tender-comment .comment-tips .rightd .titled{float:left;height:50%;width:100%;font-size: 1rem;line-height: 1.7rem;}
+.tender .tabone .tender-comment .comment-tips .rightd .contentd{float:left;height:50%;width:100%;font-size: 0.8rem;line-height: 1.7rem;}
+.tender .tabone .tender-comment .comment-ups{width:100%;height:10rem;}
+.tender .tabone .tender-comment .comment-ups .left{width:13%;height:4rem;float:left;}
+.tender .tabone .tender-comment .comment-ups .left .imgs{width:100%;height:80%;float:left;}
+.tender .tabone .tender-comment .comment-ups .left .imgs img{width: 100%;height:100%;}
+.tender .tabone .tender-comment .comment-ups .left .tip{float:left;width:100%;text-align: center; font-size: 1rem;}
+.tender .tabone .tender-comment .comment-ups .right{width:87%;float:left;height:100%;}
+.tender .tabone .tender-comment .comment-ups .right .outlines{width:100%;height:100%;border:1px solid #dddddd;}
+.tender .tabone .tender-comment .comment-ups .right .outlines textarea{padding:2rem;margin:1.5rem auto 0;width:80%;height:40%;display:block;}
+.tender .tabone .tender-comment .comment-sub{width:100%;height:3rem;float:left;margin:1rem 0;}
+.tender .tabone .tender-comment .comment-sub .buttonsub{float:right;border:1px solid #dddddd;border-radius: 3px;padding:0.5rem 0;background-color: #E25D25;color:white;width:100%;height:3rem;text-align: center;line-height: 3rem;font-size: 2rem;}
