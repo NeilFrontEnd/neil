@@ -216,7 +216,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../assets/mylogo.png" class="user-image" alt="User Image">
-              <span class="hidden-xs">Admin</span>
+              <span class="hidden-xs">{{ username }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -272,7 +272,7 @@
           <img src="../assets/mylogo.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Admin</p>
+          <p>{{ username }}</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -330,13 +330,24 @@
           </a>
         </li>
         </li>
+        <li class="treeview" :class="tag=='database'?'active':''">
+          <a href="#/database">
+            <i class="fa fa-dashboard"></i> <span>数据库配置</span>
+           <span class="pull-right-container">
+              <small class="label pull-right bg-green"></small>
+            </span>
+          </a>
+        </li>
+        </li>
       </ul>
     </section>
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
+    <transition name='fade'>
       <router-view></router-view>
+      </transition>
   </div>
    <footer class="main-footer">
     <div class="pull-right hidden-xs">
@@ -538,12 +549,15 @@
 </template>
 
 <script>
-
+import { mapState,mapMutations } from 'vuex'
 export default {
   data(){
     return {
       tag:'hello'
     }
+  },
+  computed:{
+    ...mapState(['username'])
   },
   beforeRouteUpdate (to, from, next) {
     this.tag = to.name;
@@ -552,7 +566,11 @@ export default {
     // 不！能！获取组件实例 `this`
     // 因为当钩子执行前，组件实例还没被创建
   },
+  methods:{
+    ...mapMutations(['init'])
+  },
   created:function(){
+    this.init();
     this.tag = this.$route.name;
   }
 }
@@ -560,5 +578,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-    
+      .fade-enter-active{
+      transition: transform 1s,opacity 1s;
+      }
+
+  .fade-enter, .fade-leave-active {
+      transform: translateX(30px);
+      opacity: 0;
+  }
 </style>

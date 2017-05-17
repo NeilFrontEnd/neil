@@ -8,13 +8,13 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-    <form action="../../index2.html" method="post">
+    <form id="loginForm" action="#" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="userid" class="form-control" v-model="userid" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" v-model='password' placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -27,7 +27,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="button" @click='submit' class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
         <!-- /.col -->
       </div>
@@ -52,8 +52,24 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
-}
+  data(){
+    return {
+      userid:'',
+      password:''
+    }
+  },
+  methods:{
+      ...mapMutations(['logins']),
+      submit:function(){
+        let userid = this.userid;
+        let password = this.password;
+        this.logins({userid:userid,password:password});
+      } 
+    }
+  }
+
 </script>
 <style scoped>
     

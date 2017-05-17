@@ -1,3 +1,4 @@
 export default {
-    href:state=>state.href
+    href:state=>state.href,
+    username:state=>state.username
 }

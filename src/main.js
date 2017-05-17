@@ -13,6 +13,19 @@ import 'font-awesome/css/font-awesome.min.css'
 
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+	if(to.name == 'pagelogin' && localStorage.islogin){
+		next('./');
+	}
+	else if(to.name != 'pagelogin' && !localStorage.islogin){
+		console.log(1);
+		next('/page/login');
+	}
+	else {
+         next();
+     }
+});
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

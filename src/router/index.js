@@ -8,6 +8,10 @@ import table from '@/components/data'
 import test from '@/components/test'
 import test1 from '@/components/testpage/test1'
 import test2 from '@/components/testpage/test2'
+
+//database
+import database from '@/components/database/index'
+import databasedetail from '@/components/database/detail'
 import login from '@/pages/singlepage/login'
 
 Vue.use(Router)
@@ -60,6 +64,19 @@ const router =  new Router({
               path: 'test2',
               name: 'test2',
               component: test2
+            }
+          ]
+        },
+        {
+          path: '/database',
+          name: 'database',
+          // redirect: '/database/detail',
+          component: database,
+          children:[
+            {
+              path: 'detail',
+              name: 'detail',
+              component: databasedetail
             }
           ]
         }

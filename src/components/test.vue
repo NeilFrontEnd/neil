@@ -1,5 +1,5 @@
 <template>
-    <transition name='fade'>
+
         <div class="col-md-10 thbox">
         <div class="col-md-4 ">
             <form action="" class="form-horizontal">
@@ -48,7 +48,6 @@
              </transition>
          </div>
         </div>
-    </transition>
 </template>
 
 <script>
@@ -59,13 +58,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-    .fade-enter-active, .fade-leave-active {
-        transition: transform 1s,opacity 1s;
-        }
-    .fade-enter, .fade-leave-active {
-        transform: translateX(30px);
-        opacity: 0;
-    }
+
     .thbox{
         position: relative;
         top: 20px;

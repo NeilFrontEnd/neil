@@ -8,7 +8,9 @@ import mutations from '../mutations'
 Vue.use(Vuex)
 
 const state = {
-  href:'hello'
+  href:'hello',
+  username:'',
+  databaselist:[]
 }
 
 export default new Vuex.Store({
